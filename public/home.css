@@ -1,0 +1,76 @@
+.home {
+  padding-top: 70px;
+}
+.home h1 {
+  margin-top: 10px;
+  text-align: center;
+  color: rgb(234, 246, 246);
+  font-weight: 2000;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.home .Home-page {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.home .Home-page .photo {
+  text-align: center;
+}
+.photo img {
+  height: 350px;
+  width: 300px;
+  border-radius: 50%;
+  border: 2px solid black;
+  box-shadow: 10px 10px 30px rgba(252, 252, 252, 0.8),
+    -10px -10px 30px rgba(252, 252, 252, 0.8);
+}
+.intro {
+  display: flex;
+  align-items: center;
+}
+.intro span {
+  border-left: 4px double rgb(242, 222, 222);
+  padding-left: 5px;
+  color: aquamarine;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 1.6rem;
+  text-shadow: -5px 5px 2px rgb(0, 0, 0);
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .home .Home-page {
+    grid-template-columns: 1fr;
+  }
+  .photo img {
+    height: 250px;
+    width: 200px;
+  }
+  .home h1 {
+    margin-top: 5px;
+    font-size: 1.4rem;
+  }
+  .intro {
+    margin: 2rem 0 0 2rem;
+  }
+  .intro span {
+    font-size: 1rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {
+}
