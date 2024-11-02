@@ -1,75 +1,84 @@
-#about-section {
-  margin-top: 2rem;
+#Education {
+  margin-top: 1rem;
   color: aqua;
 }
-.about-title {
+#Education .title {
   font-size: 2rem;
-  text-align: center;
   font-weight: bold;
+  text-align: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: italic;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-.about {
+.Edu-description {
+  padding: 1rem 0;
+}
+.SSC {
+  border-top: 1px solid rgb(225, 209, 209);
+}
+.SSC,
+.HSC,
+.BSc {
   margin: 0 3rem;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 1rem;
-  padding: 1rem;
-  border-top: 1px solid rgb(225, 209, 209);
+  padding: 1rem 0;
+}
+.BSc {
   border-bottom: 1px solid rgb(225, 209, 209);
 }
-.about h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
+.Edu-description h2 {
+  font-size: 1.3rem;
   font-weight: bold;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: italic;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-.about .descreption {
-  font-size: 1.3rem;
+.Edu-description span {
+  font-size: 1.2rem;
+  font-weight: normal;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  text-align: justify;
-}
-.about .descreption h3 {
-  font-style: italic;
+  border-left: 2px solid burlywood;
+  padding-left: 5px;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .about-title {
+  #Education .title {
     font-size: 1rem;
   }
-  .about {
+  .SSC,
+  .HSC,
+  .BSc {
     margin: 0 1rem;
     gap: 1rem;
   }
-  .about h1 {
+  .Edu-description h2 {
     font-size: 1rem;
   }
-  .about .descreption {
+  .Edu-description span {
     font-size: 1rem;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
-  .about-title {
+  #Education .title {
     font-size: 1rem;
   }
-  .about {
+  .SSC,
+  .HSC,
+  .BSc {
     margin: 0 1rem;
     gap: 1rem;
   }
-  .about h1 {
+  .Edu-description h2 {
     font-size: 1rem;
   }
-  .about .descreption {
+  .Edu-description span {
     font-size: 1rem;
   }
 }
