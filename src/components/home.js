@@ -2,7 +2,6 @@ import React from "react";
 function Home() {
   return (
     <div className="home" id="home">
-      <h1>Home</h1>
       <div className="Home-page">
         <div className="photo">
           <img src="./picture/irfan.jpg" alt="" />
