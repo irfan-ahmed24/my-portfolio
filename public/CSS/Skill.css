@@ -1,0 +1,234 @@
+#skill-section {
+  margin-top: 1rem;
+  color: aqua;
+}
+#skill-section h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.progress-bar {
+  position: relative;
+  margin: 0 3rem;
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgb(225, 209, 209);
+  border-bottom: 1px solid rgb(225, 209, 209);
+}
+.progress-bar .straight-line li {
+  list-style-type: none;
+  margin: 80px 0;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  position: relative;
+}
+.progress-bar .straight-line li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background-color: aqua;
+  top: calc(100% + 5px);
+  left: 0;
+  border-radius: 1000px;
+  box-shadow: -2px 2px 5px rgb(27, 26, 26);
+}
+.progress-bar .straight-line li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 20px;
+  background-color: rgb(32, 204, 132);
+  top: calc(100% + 5px);
+  left: 0;
+  border-radius: 1000px;
+  box-shadow: -0px 5px 10px rgb(39, 39, 38);
+}
+.progress-bar .straight-line .html::after {
+  animation-name: html;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes html {
+  to {
+    width: 90%;
+  }
+}
+.progress-bar .straight-line .css::after {
+  animation-name: css;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes css {
+  to {
+    width: 70%;
+    background-color: rgb(49, 124, 204);
+  }
+}
+.progress-bar .straight-line .js::after {
+  animation-name: js;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes js {
+  to {
+    width: 60%;
+    background-color: rgb(21, 53, 108);
+  }
+}
+.progress-bar .straight-line .react::after {
+  animation-name: react;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes react {
+  to {
+    width: 30%;
+    background-color: rgb(150, 4, 4);
+  }
+}
+/*cicular progress bar*/
+@property --cicularProgress {
+  syntax: "<number>";
+  initial-value: 0;
+  inherits: false;
+}
+.circular-bar {
+  padding: 0rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+  place-items: center;
+}
+.circular-bar .circular {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.circular-bar .circular span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 5px black;
+}
+.circular-bar .circular::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: rgb(1, 70, 112);
+}
+.circular-bar .c-html {
+  animation: c-html 2s forwards;
+  background: conic-gradient(
+    rgb(236, 93, 93) calc(var(--cicularProgress) * 3.6deg),
+    white 0deg
+  );
+}
+.circular-bar .c-css {
+  animation: c-css 2s forwards;
+  background: conic-gradient(
+    rgb(9, 72, 190) calc(var(--cicularProgress) * 3.6deg),
+    white 0deg
+  );
+}
+.circular-bar .c-js {
+  animation: c-js 2s forwards;
+  background: conic-gradient(
+    rgb(211, 105, 105) calc(var(--cicularProgress) * 3.6deg),
+    white 0deg
+  );
+}
+.circular-bar .c-react {
+  animation: c-react 2s forwards;
+  background: conic-gradient(
+    rgb(137, 5, 5) calc(var(--cicularProgress) * 3.6deg),
+    white 0deg
+  );
+}
+@keyframes c-html {
+  100% {
+    --cicularProgress: 90;
+  }
+}
+@keyframes c-css {
+  100% {
+    --cicularProgress: 80;
+  }
+}
+@keyframes c-js {
+  100% {
+    --cicularProgress: 70;
+  }
+}
+@keyframes c-react {
+  100% {
+    --cicularProgress: 40;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .circular-bar {
+    margin-top: 0;
+    padding: 0rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .progress-bar {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .circular-bar .circular {
+    height: 100px;
+    width: 100px;
+  }
+  .circular-bar .circular::before {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  .progress-bar {
+    margin: 0 1rem;
+  }
+  .circular-bar .circular {
+    height: 150px;
+    width: 150px;
+  }
+  .circular-bar .circular::before {
+    width: 120px;
+    height: 120px;
+  }
+  .circular-bar {
+    margin-top: 0;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {
+}
