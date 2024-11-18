@@ -23,16 +23,16 @@
 }
 .progress-bar .straight-line li {
   list-style-type: none;
-  margin: 80px 0;
+  margin: 0 0 40px 0;
   font-weight: bolder;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   position: relative;
 }
 .progress-bar .straight-line li::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 20px;
+  height: 10px;
   background-color: aqua;
   top: calc(100% + 5px);
   left: 0;
@@ -43,7 +43,7 @@
   content: "";
   position: absolute;
   width: 0;
-  height: 20px;
+  height: 10px;
   background-color: rgb(32, 204, 132);
   top: calc(100% + 5px);
   left: 0;
@@ -96,7 +96,7 @@
 
 @keyframes react {
   to {
-    width: 30%;
+    width: 20%;
     background-color: rgb(150, 4, 4);
   }
 }
@@ -115,8 +115,9 @@
 }
 .circular-bar .circular {
   position: relative;
-  height: 200px;
-  width: 200px;
+  margin-bottom: 10px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
 }
 .circular-bar .circular span {
@@ -132,8 +133,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 160px;
-  height: 160px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background-color: rgb(1, 70, 112);
 }
@@ -182,7 +183,7 @@
 }
 @keyframes c-react {
   100% {
-    --cicularProgress: 40;
+    --cicularProgress: 20;
   }
 }
 /* Extra small devices (phones, 600px and down) */
@@ -197,28 +198,12 @@
     display: flex;
     flex-direction: column;
   }
-  .circular-bar .circular {
-    height: 100px;
-    width: 100px;
-  }
-  .circular-bar .circular::before {
-    width: 80px;
-    height: 80px;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
   .progress-bar {
     margin: 0 1rem;
-  }
-  .circular-bar .circular {
-    height: 150px;
-    width: 150px;
-  }
-  .circular-bar .circular::before {
-    width: 120px;
-    height: 120px;
   }
   .circular-bar {
     margin-top: 0;

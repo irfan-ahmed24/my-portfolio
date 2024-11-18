@@ -17,26 +17,26 @@ export default class Skills extends Component {
           <div className="circular-bar">
             <div className="circular c-html">
               <span>
-                <h2>90%</h2>
-                <h3>HTML</h3>
+                <h3>90%</h3>
+                <h4>HTML</h4>
               </span>
             </div>
             <div className="circular c-css">
               <span>
-                <h2>80%</h2>
-                <h3>CSS</h3>
+                <h3>80%</h3>
+                <h4>CSS</h4>
               </span>
             </div>
             <div className="circular c-js">
               <span>
-                <h2>70%</h2>
-                <h3>Javascript</h3>
+                <h3>70%</h3>
+                <h4>Javascript</h4>
               </span>
             </div>
             <div className="circular c-react">
               <span>
-                <h2>40%</h2>
-                <h3>React</h3>
+                <h3>20%</h3>
+                <h4>React</h4>
               </span>
             </div>
           </div>
