@@ -110,7 +110,7 @@
   padding: 0rem 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 2rem;
+ 
   place-items: center;
 }
 .circular-bar .circular {
@@ -119,6 +119,7 @@
   height: 100px;
   width: 100px;
   border-radius: 50%;
+  box-shadow: -5px 5px 5px black;
 }
 .circular-bar .circular span {
   position: absolute;

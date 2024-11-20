@@ -1,0 +1,32 @@
+#Contact{
+    background-color: rgb(17, 16, 16);
+}
+#Contact h3{
+    color: rgb(232, 217, 217);
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+#Contact ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+#Contact ul li{
+    text-decoration: none;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
+#Contact ul li .face,
+.github{
+    color: rgb(56, 8, 199);
+    background-color: aqua;
+    border-radius: 50%;
+}
+#Contact ul li .email{
+    color: rgb(46, 46, 232);
+}
+#Contact ul li .phone{
+    color: red;
+}

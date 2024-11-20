@@ -3,8 +3,8 @@ import React, { Component } from "react";
 export default class Project extends Component {
   render() {
     return (
-      <div>
-        <h3>Project section comming soon</h3>
+      <div id="Project-section">
+        <h1>Project section comming soon....</h1>
       </div>
     );
   }
