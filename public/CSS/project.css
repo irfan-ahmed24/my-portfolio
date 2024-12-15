@@ -1,6 +1,55 @@
-#Project-section{
-    text-align: center;
-    margin: 0 3rem;
-    color: white;
-    padding: 2rem;
+#Project-section {
+    margin-top: 1rem;
+    color: aqua;
 }
+
+.projects {
+    position: relative;
+    margin: 0 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid rgb(225, 209, 209);
+}
+
+#Project-section h1 {
+    text-align: center;
+}
+
+.projects a {
+    color: aqua;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(46, 43, 43);
+    transition: all 0.2s;
+}
+
+.projects a:hover {
+    box-shadow: 4px 4px 4px rgb(45, 42, 42);
+    transform: scale(1.05);
+}
+
+.projects a img {
+    border-radius: 10px 0px 0px 10px;
+    height: 120px;
+    width: 180px;
+}
+
+.restaurent {
+    margin-left: 2px;
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr;
+        margin: 0 1rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {}
